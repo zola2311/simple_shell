@@ -2,7 +2,7 @@
 /**
  * _getenv - search name in environment vars
  * @name: variable to search
- * Return: value of name var - Null if not found
+ * Return: value of the name var - Null if not found
  */
 char *_getenv(char *name)
 {
@@ -38,9 +38,8 @@ char *_getenv(char *name)
 	return (NULL);
 }
 /**
- * cmd_path - concat argument with PATH dirs
+ * cmd_path - concat the argument with PATH dirs
  * @argv: argument to concat
- * Return: absoulte path of command - Null if doesn't exits
  */
 char *cmd_path(char **argv)
 {
