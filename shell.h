@@ -14,9 +14,9 @@ extern char **environ;
 
 /**
  * struct params - object with all variables
- * @argv: arguments from user
- * @loop: num of times prompt has been showed
- * @found: used to find files with stat()
+ * @argv: args from user
+ * @loop: number of times prompt has been showed
+ * @found: used for finding files with stat()
  * @buff: used with getline()
  * @cmd: command = path + argv[0]
  * @name: name of executable used in errors
@@ -24,13 +24,13 @@ extern char **environ;
  */
 typedef struct params
 {
-	char **argv;
-	int *loop;
-	struct stat found;
-	char *buff;
-	char *cmd;
-	char *name;
-	int exit_value;
+  char **argv;
+  int *loop;
+  struct stat found;
+  char *buff;
+  char *cmd;
+  char *name;
+  int exit_value;
 } params;
 
 /* core_funs.c */
@@ -59,7 +59,7 @@ char *_strcpy(char *dest, char *src);
 char *str_concat(char *s1, char *s2);
 int _atoi(char *s);
 
-/* buil-ins.c */
+/* built-ins.c */
 int check_word(char **argv);
 int exit_built_in(params *p);
 void env_built_in(params *p);
