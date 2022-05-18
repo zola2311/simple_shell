@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * check_builtin - execute if argv is built-in command
- * @p: struct with all vars
+ * check_builtin - execute the if argv is built-in command
+ * @p: struct wiith all vars
  * Return: int
  */
 int check_builtin(params *p)
