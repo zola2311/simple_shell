@@ -24,13 +24,13 @@ extern char **environ;
  */
 typedef struct params
 {
-  char **argv;
-  int *loop;
-  struct stat found;
-  char *buff;
-  char *cmd;
-  char *name;
-  int exit_value;
+char **argv;
+int *loop;
+struct stat found;
+char *buff;
+char *cmd;
+char *name;
+int exit_value;
 } params;
 
 /* core_funs.c */
