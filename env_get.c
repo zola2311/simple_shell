@@ -40,6 +40,7 @@ char *_getenv(char *name)
 /**
  * cmd_path - concat the argument with PATH dirs
  * @argv: argument to concat
+ * Return: absoulte path of command - NULL if don't exits
  */
 char *cmd_path(char **argv)
 {
